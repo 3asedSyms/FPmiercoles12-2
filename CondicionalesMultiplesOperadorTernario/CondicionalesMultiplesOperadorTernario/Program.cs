@@ -51,7 +51,7 @@ namespace CondicionalesMultiplesOperadorTernario
                 default:
                     Console.WriteLine("Porfavor ingrese un dia de la semana correcto");
                     break;
-            }*/
+            }
 
             float num1 = 0f;
             float num2 = 0f;
@@ -63,7 +63,47 @@ namespace CondicionalesMultiplesOperadorTernario
             Console.WriteLine("Ingrese operacion ");
             suma = Single.Parse(Console.ReadLine());
             Console.WriteLine("Ingrese numero 1");
+            */
+
+
+
+
+            float numero1 = 0f;
+            float numero2 = 0f;
+            float numero3 = 0f;
             
+
+            Console.WriteLine("Ingrese Numero1");
+            numero1 = Single.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese Numero2");
+            numero2 = Single.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese Numero3");
+            numero3 = Single.Parse(Console.ReadLine());
+
+
+            float mayor = 0f;
+            float medio = 0f;
+            float menor = 0f;
+
+            if (numero1 != numero2 && numero1 != numero3)
+            {
+                if (numero2 != numero3)
+                {
+                    if (numero1 >= numero2 && numero1 >= numero3)
+                    {
+                        mayor = numero1;
+                        
+                        if(numero2 >= numero3) 
+                        {
+                          
+                        }
+
+                    }
+                }
+            }
+
+            //Console.ReadLine()
+
 
         }
     }
