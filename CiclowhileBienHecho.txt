@@ -1,0 +1,23 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int numero = 0;
+        int acumulador = 0;
+        
+        
+        Console.WriteLine("Ingrese un numero positivo");
+        numero = Convert.ToInt32(Console.ReadLine());
+        
+        while (numero >= 0)
+        {
+            acumulador += numero;
+            Console.WriteLine("Ingrese un numero positivo");
+            numero = Convert.ToInt32(Console.ReadLine());
+        }
+        Console.WriteLine(acumulador); 
+        
+    }
+}

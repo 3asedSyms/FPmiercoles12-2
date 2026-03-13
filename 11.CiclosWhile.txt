@@ -1,0 +1,42 @@
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+    int cantidadNumeros = 0;    
+    int numero = 0;
+    int contador = 0;
+    int ceros = 0;
+    int mayorCero = 0;
+    int menorCero = 0;
+    
+    Console.WriteLine("Ingrese numero");
+    cantidadNumeros = int.Parse(Console.ReadLine());
+   
+    
+    while (contador <= cantidadNumeros) 
+    {
+        Console.WriteLine($"Ingrese el valor del numero {contador} ");
+        numero = int.Parse(Console.ReadLine());
+        if(numero == 0)
+        {
+            ceros ++;
+        }else 
+        {
+            if (numero > 0)
+            {
+                mayorCero++;
+            }else
+            {
+                menorCero++;
+            }
+        }
+        contador ++;
+    }
+    Console.WriteLine($"Ceros:{ceros} , Mayores a cero:{mayorCero} , Menores a cero: {menorCero}");
+        
+ 
+    }
+}
